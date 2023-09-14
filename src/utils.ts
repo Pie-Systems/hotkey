@@ -13,7 +13,9 @@ export function isFormField(element: Node): boolean {
       type !== 'reset' &&
       type !== 'checkbox' &&
       type !== 'radio' &&
-      type !== 'file') ||
+      type !== 'file' &&
+      type !== 'text' &&
+      type !== 'number') ||
     element.isContentEditable
   )
 }
